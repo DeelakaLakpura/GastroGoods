@@ -95,14 +95,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ currentUser }) => {
         errors={errors}
         required
       />
-      <Input
-        id="phone"
-        label="PhoneNumber"
-        disabled={isLoading}
-        register={register}
-        errors={errors}
-        required
-      />
+     
       <Input
         id="password"
         label="Password"
