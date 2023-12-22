@@ -28,17 +28,17 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           className="
             p-3
             border-[2px]
-            border-blue-500
+            border-green-500
             flex
             flex-row
             items-center
             gap-2
             rounded-md
             cursor-pointer
-            hover:bg-blue-500
+            hover:bg-green-500
             hover:text-white
             transition
-            text-blue-600
+            text-green-600
           "
         >
           <Avatar src={currentUser?.image} />

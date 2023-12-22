@@ -6,13 +6,12 @@ import Input from "../components/inputs/Input";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Button from "../components/Button";
 import Link from "next/link";
-import { AiOutlineGoogle } from "react-icons/ai";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { SafeUser } from "@/types";
-import GoogleButton from "react-google-button";
+
 
 interface RegisterFormProps {
   currentUser: SafeUser | null;
@@ -97,6 +96,14 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ currentUser }) => {
         required
       />
       <Input
+        id="phone"
+        label="PhoneNumber"
+        disabled={isLoading}
+        register={register}
+        errors={errors}
+        required
+      />
+      <Input
         id="password"
         label="Password"
         disabled={isLoading}
@@ -109,11 +116,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ currentUser }) => {
         label={isLoading ? "Loading" : "Sign Up"}
         onClick={handleSubmit(onSubmit)}
       />
-      <p>OR</p>
-      <GoogleButton  onClick={() => {
-          signIn("google");
-        }}/>
-
+      
       <p className="text-sm">
         Already have an account?{" "}
         <Link className="underline" href="/login">

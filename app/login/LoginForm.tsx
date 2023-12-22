@@ -91,13 +91,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ currentUser }) => {
         label={isLoading ? "Loading" : "Login"}
         onClick={handleSubmit(onSubmit)}
       />
-      <p>OR</p>
-      <GoogleButton
-        label="Continue with Google"
-        onClick={() => {
-          signIn("google");
-        }}
-      />
+     
       <p className="text-sm">
         Do not have an account?{" "}
         <Link className="underline" href="/register">
