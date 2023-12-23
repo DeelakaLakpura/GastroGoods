@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from "react";
 import Avatar from "../Avatar";
-import { BsArrowDown } from "react-icons/bs"; // Changed icon to BsArrowDown
+import { BsArrowDown } from "react-icons/bs"; 
 import Link from "next/link";
 import MenuItem from "./MenuItem";
 import { signOut } from "next-auth/react";

@@ -20,8 +20,9 @@ const CartCount = () => {
         className="absolute
       top-[-10px]
       right-[-10px]
-      bg-slate-700
+      bg-green-700
       text-white
+      font-bold	
       h-6
       w-6
       rounded-full

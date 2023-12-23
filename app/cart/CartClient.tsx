@@ -66,6 +66,7 @@ const CartClient: React.FC<CartClientProps> = ({ currentUser }) => {
         <div className="w-[90px]">
           <Button
             label="Clear Cart"
+     
             onClick={() => {
               handleClearCart();
             }}

@@ -246,11 +246,10 @@ const AddProductForm = () => {
       <div className="w-full flex flex-col flex-wrap gap-4">
         <div>
           <div className="font-bold">
-            Select the available product colors and upload their images.
+           Select Images
           </div>
           <div className="text-sm">
-            You must upload an image for each of the color selected otherwise
-            your color selection will be ignored.
+           Select your project images, you can add the 4 images.
           </div>
         </div>
         <div className="grid grid-cols-2 gap-3">

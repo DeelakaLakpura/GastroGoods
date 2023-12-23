@@ -35,15 +35,9 @@ const NavBar = async () => {
           md:gap-0
           "
           >
-            <Link
-              href="/"
-              className={`${nunito.className} font-bold text-2xl`}
-            >
-                  <Image src={"https://i.ibb.co/v4Mg4Jt/logo.png"} width={200} height={100}  alt="logo" ></Image>
-
-            </Link>
-            <div className="hidden md:block"><SearchBar/></div>
+            <Link href="/"> <Image src={"https://i.ibb.co/v4Mg4Jt/logo.png"} width={200} height={100}  alt="logo" ></Image> </Link>
             <div className="flex items-center gap-8 md:gap-12">
+            <SearchBar/>
               <CartCount />
               <UserMenu currentUser={currentUser} />
             </div>

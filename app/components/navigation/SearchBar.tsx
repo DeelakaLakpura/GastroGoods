@@ -4,7 +4,6 @@ import queryString from "query-string";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { MdSearch } from "react-icons/md";
 
-
 const SearchBar = () => {
   const router = useRouter();
 
@@ -37,13 +36,13 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="flex items-center bg-gray-300 p-2 rounded-md shadow-md">
+    <div className="flex items-center">
       <input
         {...register("searchTerm")}
         autoComplete="off"
         type="text"
         placeholder="Search for something..."
-        className="p-2 border-none bg-transparent text-white focus:outline-none w-80"
+        className="p-2 border border-gray-300 rounded-md focus:outline-none w-60"
       />
       <button
         onClick={handleSubmit(onSubmit)}
