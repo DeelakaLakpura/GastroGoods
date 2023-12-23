@@ -8,6 +8,7 @@ interface ButtonProps {
   outline?: boolean;
   small?: boolean;
   custom?: string;
+
   icon?: IconType;
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
@@ -32,6 +33,8 @@ const Button: React.FC<ButtonProps> = ({
         hover:opacity-80
         transition
         w-full
+        font-bold
+        font-family-nunito
         border-green-500
         flex
         items-center

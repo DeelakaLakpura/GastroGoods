@@ -5,6 +5,8 @@ import { truncateText } from "@/utils/truncateText";
 import { Rating } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Button from "../Button";
+import { AiOutlineFundView } from "react-icons/ai";
 
 interface ProductCardProps {
   data: any;
@@ -21,13 +23,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
 
   return (
     <div
-      onClick={() => router.push(`/product/${data.id}`)}
+    
       className="col-span-1
     cursor-pointer
-    border-[1.2px]
-    border-slate-200
+    border-[1.3px]
+    border-green-400
     bg-slate-50
-    rounded-sm
+    rounded-md
     p-2
     transition
     hover:scale-105
@@ -58,6 +60,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
         </div>
         <div>{data.reviews.length} reviews</div>
         <div className="font-semibold">{formatPrice(data.price)}</div>
+        <Button onClick={() => router.push(`/product/${data.id}`)} icon={AiOutlineFundView} label="View Product" ></Button>
       </div>
     </div>
   );
