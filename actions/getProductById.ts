@@ -1,34 +1,45 @@
-import prisma from '@/libs/prismadb'
+// Importing the 'prisma' instance from the '@/libs/prismadb' module
+import prisma from '@/libs/prismadb';
 
-interface IParams{
-    productId?: string
+// Defining an interface 'IParams' with an optional property 'productId' of type string
+interface IParams {
+    productId?: string;
 }
 
-export default async function getProductById(params: IParams){
+// Exporting an asynchronous function 'getProductById' that takes parameters of type 'IParams'
+export default async function getProductById(params: IParams) {
     try {
-        const {productId} = params;
-        
-        const product = await prisma.product.findUnique({
-            where:{
-                id: productId
-            }, 
-            include:{
-                reviews:{
-                    include: {
-                        user: true
-                    },
-                    orderBy:{
-                        createdDate: 'desc'
-                    }
-                }
-            }
-        })
+        // Destructuring the 'productId' from the 'params' object
+        const { productId } = params;
 
-        if(!product){
+        // Using Prisma to find a unique product based on the provided 'productId'
+        const product = await prisma.product.findUnique({
+            where: {
+                id: productId,
+            },
+            // Including related 'reviews' with associated 'user' data
+            include: {
+                reviews: {
+                    include: {
+                        user: true,
+                    },
+                    // Ordering reviews by 'createdDate' in descending order
+                    orderBy: {
+                        createdDate: 'desc',
+                    },
+                },
+            },
+        });
+
+        // If no product is found, return null
+        if (!product) {
             return null;
         }
+
+        // Return the retrieved product with associated reviews
         return product;
     } catch (error: any) {
-        throw new Error(error)
+        // If an error occurs during execution, throw an error
+        throw new Error(error);
     }
 }

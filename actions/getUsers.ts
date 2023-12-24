@@ -1,11 +1,17 @@
-import prisma from '@/libs/prismadb'
+// Importing the 'prisma' instance from the 'prismadb' module
+import prisma from '@/libs/prismadb';
 
-export default async function getUsers(){
+// Exporting an asynchronous function named 'getUsers'
+export default async function getUsers() {
     try {
-        const users = prisma?.user.findMany()
+        // Attempting to retrieve a list of users using the 'findMany' method of the 'prisma.user' model
+        const users = prisma?.user.findMany();
 
-        return users
+        // Returning the list of users
+        return users;
     } catch (error: any) {
-        throw new Error(error)
+        // If an error occurs during the execution of the code in the 'try' block,
+        // it will be caught here, and an error will be thrown with the error message
+        throw new Error(error);
     }
 }
