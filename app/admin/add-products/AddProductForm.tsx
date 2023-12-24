@@ -12,12 +12,7 @@ import { colors } from "@/utils/setImage";
 import { useCallback, useEffect, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import {
-  getDownloadURL,
-  getStorage,
-  ref,
-  uploadBytesResumable,
-} from "firebase/storage";
+
 import axios from "axios";
 import { useRouter } from "next/navigation";
 
