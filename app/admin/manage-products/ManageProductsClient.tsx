@@ -2,7 +2,7 @@
 
 import { Product } from "@prisma/client";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import { formatPrice } from "@/utils/formatPrice";
+import { formatPrice } from "@/utilities/formatPrice";
 import Heading from "@/app/components/Heading";
 import Status from "@/app/components/Status";
 import {

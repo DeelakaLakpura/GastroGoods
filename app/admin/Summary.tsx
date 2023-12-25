@@ -3,8 +3,8 @@
 import { Order, Product, User } from "@prisma/client";
 import { useEffect, useState } from "react";
 import Heading from "../components/Heading";
-import { formatPrice } from "@/utils/formatPrice";
-import { formatNumber } from "@/utils/formatNumber";
+import { formatPrice } from "@/utilities/formatPrice";
+import { formatNumber } from "@/utilities/formatNumber";
 
 interface SummaryProps{
     orders: Order[];

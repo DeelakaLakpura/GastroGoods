@@ -1,9 +1,9 @@
 "use client";
 
-import { formatPrice } from "@/utils/formatPrice";
+import { formatPrice } from "@/utilities/formatPrice";
 import { CartProductType } from "../product/[productId]/ProductDetails";
 import Link from "next/link";
-import { truncateText } from "@/utils/truncateText";
+import { truncateText } from "@/utilities/truncateText";
 import Image from "next/image";
 import SetQuatity from "../components/products/SetQuantity";
 import { useCart } from "@/hooks/useCart";

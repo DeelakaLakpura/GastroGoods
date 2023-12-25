@@ -1,6 +1,6 @@
 'use client'
 
-import { categories } from "@/utils/Categories";
+import { categories } from "@/utilities/Categories";
 import Container from "../Container";
 import Category from "./Category";
 import { usePathname, useSearchParams } from "next/navigation";

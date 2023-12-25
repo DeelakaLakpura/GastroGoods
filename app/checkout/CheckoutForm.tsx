@@ -1,7 +1,7 @@
 "use client";
 
 import { useCart } from "@/hooks/useCart";
-import { formatPrice } from "@/utils/formatPrice";
+import { formatPrice } from "@/utilities/formatPrice";
 import {
   useStripe,
   useElements,
