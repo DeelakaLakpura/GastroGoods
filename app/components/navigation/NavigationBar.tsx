@@ -7,6 +7,7 @@ import getCurrentUser from "@/actions/getCurrentUser";
 import Categories from "./Categories";
 import SearchBar from "./SearchBar";
 import Image from "next/image";
+import AdminItem from "./AdminLogin";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["400"] });
 
@@ -40,6 +41,7 @@ const NavBar = async () => {
             <SearchBar/>
               <CartCount />
               <UserMenu currentUser={currentUser} />
+              <AdminItem/>
             </div>
           </div>
         </Container>

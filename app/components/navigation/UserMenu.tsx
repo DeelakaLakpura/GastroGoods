@@ -27,8 +27,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={toggleOpen}
           className="
             p-3
-            border-[2px]
-            border-green-500
             flex
             flex-row
             items-center
@@ -41,7 +39,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             text-green-600
           "
         >
-          <Avatar src={currentUser?.image} />
+          <Avatar src={'https://i.ibb.co/cQvM5Vq/icons8-user-100.png'} />
           <BsArrowDown />
         </div>
         {isOpen && (
@@ -64,9 +62,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
               <div>
                 <Link href="/orders">
                   <MenuItem onClick={toggleOpen}>Your Purchases</MenuItem>
-                </Link>
-                <Link href="/admin">
-                  <MenuItem onClick={toggleOpen}>Admin Dashboard</MenuItem>
                 </Link>
                 <hr className="border-gray-600 my-2" />
                 <MenuItem

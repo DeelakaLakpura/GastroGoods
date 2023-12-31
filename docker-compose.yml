@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  app: docker-nextjs-dev
+  build: 
+  prots: 
+    -3000:3000
+    
