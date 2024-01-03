@@ -9,7 +9,7 @@ const AdminItem= () => {
   return (
     <div>
             <Button>
-                <Link href={'/admin/admin-login'}>
+                <Link href={'/admin'}>
                     <div  className="
             p-3
             flex
