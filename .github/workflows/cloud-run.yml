@@ -27,7 +27,7 @@ jobs:
           credentials_json: "${{secrets.CLOUD_RUN_SERVICE_ACCOUNT}}"
 
       # Setup gcloud CLI/SDK
-      - name: Set up Cloud SDK
+      - name: Set up Cloud SDK 
         uses: google-github-actions/setup-gcloud@v1
 
       - name: Authorize Docker push
