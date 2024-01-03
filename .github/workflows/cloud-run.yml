@@ -7,7 +7,7 @@ on:
       - main
 
 env:
-  PROJECT_ID: ${{ secrets.CLOUD_RUN_PROJECT_NAME }}
+  PROJECT_ID: ${{secrets.CLOUD_RUN_PROJECT_NAME}}
   REGION: us-east1
   # project-name but it can be anything you want
   REPO_NAME: GastroGoods
@@ -24,7 +24,7 @@ jobs:
       - id: "auth"
         uses: "google-github-actions/auth@v1"
         with:
-          credentials_json: "${{ secrets.CLOUD_RUN_SERVICE_ACCOUNT }}"
+          credentials_json: "${{secrets.CLOUD_RUN_SERVICE_ACCOUNT}}"
 
       # Setup gcloud CLI/SDK
       - name: Set up Cloud SDK
