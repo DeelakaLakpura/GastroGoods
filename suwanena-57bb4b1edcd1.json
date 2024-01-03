@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "suwanena",
+  "private_key_id": "57bb4b1edcd1de0d74552b1ce22979c5bfecb633",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQC50qFp1RFTtPpa\nGPoHwhhOMcFE5XSVFP5ZmAPjzQp5Mgrl0H32eiYnSf6Uho/g8WB2dunMbhVagzoy\nUmD5CdSIovpQFwtupf6dMk1NIghQ1hAkAPrM3mN8RfBGFec1bnTR7MM7iBWDPJ3P\n+qHiA7Z4yGPIyB9TvWbESw8xpeWXBGKZd340yd+faZuiPp0ZPwMWiyeZzQMG9lKb\nPrbn/W2nxOgCRAJLgEedhKmbPVqystpUYSonve1nISkIi4UcMEJgMHaKjRPAC7wx\nOqANWCG6P7FQszPEiWbS81jsV8LBmc0vT33ZgZKbBzgjdlNZEzBy/32rByY9I7kA\nALnIc4IvAgMBAAECgf879LogBTj4YtLKparTosybOwwg+4GiMiPfKvoWUxIOCLEV\nDzBiI23FpecYBR+adK2rJRl93G1txumZuWEqLJtmrfwV21mhwFPNMW2/qKHTDNgo\nX1u/8Zr0sTXVZzvMNNd8fegZ5s6jvLf7YxYLo41v0Z7G9pfx013uxK+Iu8slIYUH\nQQ5NOYbDRzYfeyYECJgskPLqBr3CCn44taEoE8TvFtPTeVhux04tzAEWXJCBb0gn\nkx7YB827hGWEbFWFobxMLP0spuEaZoHaeYUg94BRw4vep0UyIsJX/PL7jNyPrnfZ\ngmv2+863q/m/v66cGms1AmphgXecgYU58JiQvZkCgYEA4ssHm5XExC/ElKcmy6AM\nAL6IdE4BLVuxY0qVrWi/q33+Gl0RBbWGWORHQZ/5ip4RbbF46YVdL7IJmlej6I7Z\nK84NRe/bduXypm+omCcex41tKaYiTAtGNSO5RY/YQBZRjFswWf0yNHEFR8998TpP\nlL6rfwoi2Y1GiBU9k/U5FR0CgYEA0cDhrXNhYOYFzfNeQptYyenMZFNPsSVvi/HQ\njLOZG2M972FSEVSB31vx1g33aPn6uOllOv+CEOH3i3wn6tLeqHSoz3EJdy4msI2P\nA4yyIYBNDrDD60pKJuaOtTv1JVhl6kMlHg1DDoJmr8x04LL0fP1iLmMmeZLQYrcg\nrT9HjrsCgYALwkcktAE9wtRIeNo0GJpGt5pPnXPGLEjoQwe7tACsHZ49M7IcP6s1\nlLB1IJxJqaRxsY/5W6bXQD3rOLwQ5Mcx1D8v7x3L7mREaOmu6ehYpGaSkECa/MKp\nIq8KgkjOGdokkt3Q7KXbvjht3r5C8akKp1AxCA+ChCayC5fjwgUxqQKBgCVlIdbu\njxnbaIWDMfbmAzpcOFhakgafCfgFMI0lJ9K+KriWvS7hxhWwKrli3A0XJB/7XFTc\nYK/p2VxA0k0HMzMNOVtiZ7GbxMINOsYDO27FlPddhFBaekXdLOwauGXkEKdnOSLW\ncnIPxYbqCJxWy0fNVMe4XY+nIQe4Zlb8xSEpAoGAXxU/JQ2JA3is6EDVxCvFyP3Y\nyRvgRbcdZbkP6dkgHdZyqCrNKhpPgMek5a1b5YODh463vPfRE9UG05/j+70dDcnK\nQpdKGeNVLrMcWLk784PWeeRSZ4bC2CpIbVE0abPpQJUuNrhXDEmDX3R9Qsy5hCDv\n1PQN0sB7l5OqXf6fXmc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gastrogoods-ecommerce-next-pro@suwanena.iam.gserviceaccount.com",
+  "client_id": "102270249172435566322",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gastrogoods-ecommerce-next-pro%40suwanena.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
