@@ -4,6 +4,7 @@ on:
   push:
     branches: main
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,11 +21,10 @@ jobs:
 
       - name: Build & push
         uses: azure/docker-build-push@v2 
-
         with:
-        push: true
-        build-args: | 
-          CONTENTFUL_SPACE_ID=${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID }}
-          CONTENTFUL_ACCESS_TOKEN=${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN }}
-        tags: ${{ secrets.ACR_ENDPOINT }}/setechnextjsapp:lastest
-        file: ./Dockerfile
+          push: true
+          build-args: | 
+            CONTENTFUL_SPACE_ID=${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID }}
+            CONTENTFUL_ACCESS_TOKEN=${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN }}
+          tags: ${{ secrets.ACR_ENDPOINT }}/setechnextjsapp:lastest
+          file: ./Dockerfile
