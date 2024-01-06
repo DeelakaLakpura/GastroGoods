@@ -15,7 +15,7 @@ jobs:
         uses: azure/docker-login@v1
         with:
           login-server: ${{ secrets.ACR_ENDPOINT }}
-          username: ${{ secrets.ARC_USERNAME }}
+          username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Build & push
@@ -24,6 +24,6 @@ jobs:
           push: true
           build-args: | 
             CONTENTFUL_SPACE_ID=${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID }}
-            CONTENTFUL_ACCESS_TOKEN=${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN }}
+            CONTENTFUL_ACCESS_TOKEN=${{ secrets.NEXT_PUBLIC_CONTAEFUL_ACCESS_TOKEN }}
           tags: ${{ secrets.ACR_ENDPOINT }}/setechnextjsapp:lastest
           file: ./Dockerfile
