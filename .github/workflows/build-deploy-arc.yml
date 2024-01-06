@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v2
 
       - name: Login to Azure Container Registry
         uses: azure/docker-login@v1
@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Build and push
-        uses: azure/docker-build-push@v2
+        uses: docker/build-push-action@v2
         with:
           push: true
           build-args: |
