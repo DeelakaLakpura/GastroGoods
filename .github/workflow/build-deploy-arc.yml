@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.ARC_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
       - name: Build and push
-        uses: azure/docker-build-push@v2
+        uses: azure/docker-build-push@v2 
 
         with:
         push: true
