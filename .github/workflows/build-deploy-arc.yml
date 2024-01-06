@@ -13,12 +13,12 @@ jobs:
 
       - name: Login to Azure Container Registry
         uses: azure/docker-login@v1
-
         with:
           login-server: ${{ secrets.ACR_ENDPOINT }}
           username: ${{ secrets.ARC_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
-      - name: Build and push
+          
+      - name: Build & push
         uses: azure/docker-build-push@v2 
 
         with:
