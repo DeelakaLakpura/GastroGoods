@@ -1,0 +1,31 @@
+name: Build & Push to Azure Container Registry
+
+on:
+  push:
+    branches: main
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+
+      - name: Login to Azure Container Registry
+        uses: azure/docker-login@v1
+
+        with:
+          login-server: ${{ secrets.ACR_ENDPOINT }}
+          username: ${{ secrets.ARC_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+      - name: Build and push
+        uses: azure/docker-build-push@v2
+
+        with:
+        push: true
+        build-args: | 
+          CONTENTFUL_SPACE_ID=${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_ACCESS_TOKEN=${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN }}
+        tags: ${{ secrets.ACR_ENDPOINT }}/setechnextjsapp:lastest
+        file: ./Dockerfile
+   
