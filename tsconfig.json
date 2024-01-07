@@ -22,7 +22,12 @@
     "paths": {
       "@/*": ["./*"]
     }
+    
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  
+ 
+
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "__test__/components/NullData.test.jsx", "__test__/router/order.test.jsx", "__test__/components/order/orderdetail.test.jsx", "__test__/components/product/addreating.test.jsx", "__test__/api/auth.test.jsx", "__test__/api/payment.test.tsx", "__test__/actions/getcurrectuser.test.jsx", "__test__/perfomance.test.jsx", "__test__/hooks/usecart.test.tsx"],
   "exclude": ["node_modules"]
 }
+
