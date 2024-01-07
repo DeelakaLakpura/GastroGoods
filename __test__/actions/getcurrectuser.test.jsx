@@ -39,7 +39,7 @@ describe('getCurrentUser', () => {
       updateAt: new Date(),
       emailVerified: new Date(),
       // ... other properties as needed for testing
-    }));
+    })); 
 
     const result = await getCurrentUser();
     expect(result).toBeDefined();

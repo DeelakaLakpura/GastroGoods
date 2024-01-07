@@ -12,7 +12,7 @@ const mockIcon: IconType = ({ size }) => <div data-testid="mock-icon" />;
 
 // Test cases
 describe("CategoryInput component", () => {
-  it("renders correctly", () => {
+  it("renders correctly", () => { 
     const { getByText, getByTestId } = render(
       <CategoryInput label="Test Label" icon={mockIcon} onClick={mockOnClick} />
     );

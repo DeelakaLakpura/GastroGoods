@@ -8,7 +8,7 @@ describe('NullData Component', () => {
     const { getByText } = render(<NullData title={title} />);
 
     const titleElement = getByText(title);
-    expect(titleElement).toBeInTheDocument();
+    expect(titleElement).toBeInTheDocument(); 
   });
 
 });

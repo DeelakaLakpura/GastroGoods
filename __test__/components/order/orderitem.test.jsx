@@ -26,6 +26,6 @@ describe('OrderItem component', () => {
     // Check if the component renders the expected content
     expect(getByText('Mock Product')).toBeInTheDocument();
     expect(getByText('mock-color')).toBeInTheDocument();
-    expect(getByText('$21.98')).toBeInTheDocument();
+    expect(getByText('$21.98')).toBeInTheDocument(); 
   });
 });

@@ -12,7 +12,7 @@ describe('ListRating Component', () => {
         user: {
           image: 'https://via.placeholder.com/150',
           name: 'John Doe',
-        },
+        }, 
         createdDate: '2022-01-01', 
         rating: 4,
         comment: 'Great product!', 

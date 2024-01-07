@@ -5,7 +5,7 @@ import { useRouter } from "next/router"; // Mocking next/router
 jest.mock("next/router", () => ({
   __esModule: true,
   useRouter: jest.fn(),
-}));
+})); 
 
 describe("AdminNav", () => {
   it("renders the component", () => {
