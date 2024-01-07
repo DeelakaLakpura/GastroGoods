@@ -1,0 +1,49 @@
+trigger:
+- main
+
+pr:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: BuildAndPush
+  displayName: 'Build and Push to ACR'
+  steps:
+  - checkout: self
+
+  - task: Docker@2
+    displayName: 'Login to ACR'
+    inputs:
+      command: 'login'
+      containerRegistry: ${{ secrets.ACR_ENDPOINT }}
+      username: ${{ secrets.ACR_USERNAME }}
+      password: ${{ secrets.ACR_PASSWORD }}
+
+  - script: |
+      docker build -t $(Build.Repository.Name):$(Build.SourceBranchName) -f Dockerfile .
+      docker tag $(Build.Repository.Name):$(Build.SourceBranchName) ${{ secrets.ACR_ENDPOINT }}/setechnextjsapp:latest
+      docker push ${{ secrets.ACR_ENDPOINT }}/setechnextjsapp:latest
+    displayName: 'Build and Push Docker Image'
+
+  - script: |
+      echo '##vso[task.setvariable variable=IMAGE_URI]${{ secrets.ACR_ENDPOINT }}/setechnextjsapp:latest'
+    displayName: 'Set Image URI Variable'
+
+  - task: PublishPipelineArtifact@1
+    displayName: 'Publish Image URI'
+    inputs:
+      targetPath: '$(Build.ArtifactStagingDirectory)'
+      artifact: 'ImageURI'
+
+  - script: echo "##vso[task.setvariable variable=IMAGE_URI]$(Build.Repository.Name):$(Build.SourceBranchName)"
+    displayName: 'Set Image URI Variable for Deployment'
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
+
+  - task: PublishPipelineArtifact@1
+    displayName: 'Publish Image URI for Deployment'
+    inputs:
+      targetPath: '$(Build.ArtifactStagingDirectory)'
+      artifact: 'ImageURI'
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
