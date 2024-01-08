@@ -8,7 +8,12 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
+
     "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["app/*"]
+    },
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -24,10 +29,11 @@
     }
     
   },
+
+  
   
  
 
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "__test__/components/NullData.test.jsx", "__test__/router/order.test.jsx", "__test__/components/order/orderdetail.test.jsx", "__test__/components/product/addreating.test.jsx", "__test__/api/auth.test.jsx", "__test__/api/payment.test.tsx", "__test__/actions/getcurrectuser.test.jsx", "__test__/perfomance.test.jsx", "__test__/hooks/usecart.test.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "__test__/components/NullData.test.tsx", "__test__/router/order.test.jsx", "__test__/components/order/orderdetail.test.jsx", "__test__/components/product/addreating.test.jsx", "__test__/api/auth.test.jsx", "__test__/api/payment.test.tsx", "__test__/actions/getcurrectuser.test.jsx", "__test__/perfomance.test.jsx", "__test__/hooks/usecart.test.tsx", "__test__/components/product/CategoryInput.test.jsx", "__test__/components/product/CartProvider.test.jsx", "__test__/addproduct.test.jsx", "__test__/components/order/orderitem.test.tsx"],
   "exclude": ["node_modules"]
 }
-

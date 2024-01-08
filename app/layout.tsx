@@ -1,10 +1,11 @@
 import "./globals.css";
-import type { Metadata } from "next";
+
 import { Nunito, Poppins } from "next/font/google";
 import NavBar from "./components/navigation/NavigationBar";
 import Footer from "./components/footer/Footer";
 import CartProvider from "@/providers/CartProvider";
 import { Toaster } from "react-hot-toast";
+import { Metadata } from "next/types";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["700", "500"] });
 
