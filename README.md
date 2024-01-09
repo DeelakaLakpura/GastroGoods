@@ -33,7 +33,7 @@ Welcome to our GastroGoods e-commerce platform! This project utilizes Next.js fo
 
 ### Installation
 
-1. **Clone the repository:**
+1. **Clone the repository :**
 
    ```bash
    git clone https://github.com/DeelakaLakpura/GastroGoods.git
@@ -41,6 +41,9 @@ Welcome to our GastroGoods e-commerce platform! This project utilizes Next.js fo
    cd GastroGoods
    npm install
    npm run dev
+   npm test
+
+   
 
 
 
@@ -58,4 +61,4 @@ Welcome to our GastroGoods e-commerce platform! This project utilizes Next.js fo
 
 
 
-Teasting
+
