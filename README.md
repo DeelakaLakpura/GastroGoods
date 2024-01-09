@@ -8,7 +8,7 @@ Welcome to our GastroGoods e-commerce platform! This project utilizes Next.js fo
 ## Admin Demo - <a href="https://gastrogoods.netlify.app/admin" target="_blank">Click Here!</a>
 
 ## Login Details
-  E-Mail - Admin@gmail.com
+  E-Mail - Admin@gmail.com<br>
   Password - Admin1234
 
 ## Features
