@@ -7,6 +7,10 @@ Welcome to our GastroGoods e-commerce platform! This project utilizes Next.js fo
 ## Demo - <a href="https://gastrogoods.netlify.app/" target="_blank">Click Here!</a>
 ## Admin Demo - <a href="https://gastrogoods.netlify.app/admin" target="_blank">Click Here!</a>
 
+## Login Details
+  E-Mail - Admin@gmail.com
+  Password - Admin1234
+
 ## Features
 
 - **Next.js:** The frontend is built using Next.js, a React framework that enables server-side rendering and other performance optimizations.
